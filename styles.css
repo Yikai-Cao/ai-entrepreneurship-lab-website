@@ -395,3 +395,44 @@ figcaption a { color: var(--cardinal); }
   .hero { min-height: 0; color: var(--ink); background: none; }
   .hero-media, .hero-shade { display: none; }
 }
+
+/* ---------- Research topic pages (strategic-tech.html, climate-tech.html) ---------- */
+.feature + .feature { margin-top: clamp(56px, 7vw, 96px); padding-top: clamp(56px, 7vw, 96px); border-top: 1px solid var(--line); }
+.feature-figure { display: grid; place-items: center; aspect-ratio: 16 / 10; padding: clamp(16px, 3vw, 32px); background: var(--warm); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color 0.2s ease; }
+.feature-figure:hover { border-color: var(--cardinal); }
+.feature-figure svg { width: 100%; height: auto; max-height: 100%; }
+.data-figure { padding: clamp(18px, 3vw, 28px); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+.data-figure svg { display: block; width: 100%; height: auto; }
+.data-figure figcaption { margin-top: 14px; font-size: 13.5px; line-height: 1.55; color: var(--stone); }
+.data-figure figcaption strong { color: var(--ink); font-weight: 600; }
+.fig-label { font: 500 13px var(--sans); fill: var(--ink-soft); }
+.fig-label-strong { font: 600 13.5px var(--sans); fill: var(--ink); }
+.fig-value { font: 600 13px var(--sans); fill: var(--ink); }
+.fig-value-light { font: 600 13px var(--sans); fill: #ffffff; }
+.fig-title { font: 500 17px var(--serif); fill: var(--ink); }
+.fig-axis { stroke: var(--line); stroke-width: 1; }
+.fig-pre { fill: var(--sandstone); }
+.fig-post { fill: var(--cardinal); }
+.fig-pos { fill: var(--cardinal); }
+.fig-neg { fill: #e9e4dd; }
+.fig-bar { fill: var(--cardinal); }
+.fig-bar-soft { fill: #d9a39b; }
+.fact-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.fact-list div { padding: 16px 18px; background: var(--paper); }
+.fact-list dt { font-size: 13.5px; color: var(--stone); }
+.fact-list dd { margin: 4px 0 0; font-size: 15.5px; color: var(--ink); }
+.finding { padding: 20px 22px; border-left: 2px solid var(--cardinal); background: var(--warm); }
+.finding h3 { margin-bottom: 8px; font-size: 21px; }
+.finding p + p { margin-top: 10px; }
+.uganda-prose .finding p { color: var(--ink-soft); }
+.method-list { padding-left: 1.1em; }
+.method-list li { color: var(--ink-soft); }
+.method-list li + li { margin-top: 8px; }
+.method-list strong { color: var(--ink); font-weight: 600; }
+.uganda-prose .paper-meta { font-size: 15px; color: var(--stone); }
+.study-item .page-link { margin-top: 10px; font-size: 14.5px; }
+.study-item .page-link a { color: var(--cardinal); font-weight: 600; text-decoration: none; }
+@media (max-width: 720px) {
+  .fact-list { grid-template-columns: 1fr; }
+  .feature-figure { aspect-ratio: auto; }
+}
