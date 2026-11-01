@@ -54,6 +54,11 @@
         li.append(h);
         li.append(el("p", "meta", [s.authors, s.year, s.venue].filter(Boolean).join(" · ")));
         if (s.summary) li.append(el("p", "summary", s.summary));
+        if (s.page) {
+          var pg = el("p", "page-link");
+          pg.append(link((s.pageText || "Read about this research") + " →", s.page));
+          li.append(pg);
+        }
         if (s.evidence && s.evidence !== s.url) {
           var src = el("p", "src", "Setting confirmed by ");
           src.append(link(s.evidenceLabel || "source", s.evidence));
