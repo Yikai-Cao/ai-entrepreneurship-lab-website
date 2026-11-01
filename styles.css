@@ -401,6 +401,7 @@ figcaption a { color: var(--cardinal); }
 .feature-figure { display: grid; place-items: center; aspect-ratio: 16 / 10; padding: clamp(16px, 3vw, 32px); background: var(--warm); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color 0.2s ease; }
 .feature-figure:hover { border-color: var(--cardinal); }
 .feature-figure svg { width: 100%; height: auto; max-height: 100%; }
+.uganda-section > * { min-width: 0; }
 .data-figure { padding: clamp(18px, 3vw, 28px); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
 .data-figure svg { display: block; width: 100%; height: auto; }
 .data-figure figcaption { margin-top: 14px; font-size: 13.5px; line-height: 1.55; color: var(--stone); }
