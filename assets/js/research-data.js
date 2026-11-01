@@ -142,7 +142,8 @@ window.LAB_RESEARCH = {
    "venue": "working paper",
    "status": "working",
    "method": "Causal inference",
-   "summary": "Links policy, venture-investment and firm-panel data to estimate how an external supply shock reallocates venture capital, using staggered difference-in-differences and double machine learning.",
+   "summary": "Uses deal-level data on 19,485 firms (560,024 firm-quarters) to estimate how an external supply shock reallocates venture capital, using difference-in-differences with firm and quarter fixed effects.",
+   "page": "strategic-tech.html",
    "url": "https://chuckeesley.com/research"
   },
   {
@@ -166,7 +167,8 @@ window.LAB_RESEARCH = {
    "venue": "working paper",
    "status": "working",
    "method": "Machine learning",
-   "summary": "Combines LLM classification of 17,000+ climate-tech firms, a RAG-based policy-uncertainty index and Hidden Markov Models with causal inference to estimate how clean-energy tax credits shift venture allocation and startup growth.",
+   "summary": "Combines LLM-based classification of 7,271 climate-tech firms, difference-in-differences and event-study estimates, a provision-level credibility index and Hidden Markov Models to study how clean-energy tax credits shift venture allocation and startup growth.",
+   "page": "climate-tech.html",
    "url": "https://chuckeesley.com/research",
    "evidence": "https://profiles.stanford.edu/charles-eesley"
   },
