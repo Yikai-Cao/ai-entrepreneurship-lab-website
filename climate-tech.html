@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Working paper on how the Inflation Reduction Act and its attempted 2025 rollback changed venture investment in U.S. climate-technology firms.">
+  <title>Climate Finance Research — AI &amp; Entrepreneurship Lab</title>
+  <link rel="stylesheet" href="styles.css?v=20261031-topics">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="preview-note">Working preview <span aria-hidden="true">·</span> Name, lab roles and affiliation are under discussion.</div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html" aria-label="AI and Entrepreneurship Lab home"><svg class="wordmark-mark" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="11.5"/><circle cx="13" cy="13" r="6.5"/><circle class="core" cx="13" cy="13" r="3"/></svg><span>AI &amp; Entrepreneurship Lab</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="index.html#people">People</a>
+        <a href="index.html#contact">Stay in Touch</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <header class="page-hero">
+      <div class="stripes" aria-hidden="true"><span style="top:40px;width:58%;--c:var(--palo-alto)"></span><span style="top:56px;width:26%;--c:var(--cardinal)"></span><span style="top:72px;width:72%;--c:var(--lagunita)"></span><span style="top:88px;width:22%;--c:var(--palo-alto)"></span></div>
+      <div class="wrap">
+      <a class="back-link" href="research.html"><span aria-hidden="true">←</span> All research</a>
+      <h1>Industrial policy and<br>climate finance</h1>
+      <p class="deck">When governments promise long-term support, does private capital follow? And what happens when those promises come under threat?</p>
+      <nav class="page-jumps" aria-label="On this page"><a href="#question">The question</a><a href="#design">Data and design</a><a href="#findings">Findings</a><a href="#credibility">Policy credibility</a><a href="#limits">Interpretation</a></nav>
+      </div>
+    </header>
+    <div class="wrap">
+    <section id="question" class="uganda-section" aria-labelledby="question-title">
+      <div class="uganda-section-label"><h2 id="question-title">The question</h2><p class="stage-note">Working paper</p></div>
+      <div class="uganda-prose">
+        <p class="lead">Policies adopted today can be revised by the next legislature or administration. Investors may therefore discount even generous public incentives, and the investment those incentives target may never materialize.</p>
+        <p>We study this commitment problem in the U.S. Inflation Reduction Act (IRA), which directed about $369 billion toward climate and energy. Early-stage investors are a sharp test: their returns depend on a policy regime holding for a decade or more. We ask whether the IRA changed which climate technologies attract venture capital, how firms finance growth, and whether investors respond to the credibility of each commitment as well as its size.</p>
+        <p class="paper-meta">Yikai Cao, Charles Eesley, Rishee Jain and Dinesh Moorjani · Stanford University and UCLA</p>
+      </div>
+    </section>
+
+    <section id="design" class="uganda-section" aria-labelledby="design-title">
+      <div class="uganda-section-label"><h2 id="design-title">Data and design</h2></div>
+      <div class="uganda-prose">
+        <dl class="fact-list">
+          <div><dt>Firms</dt><dd>7,271 U.S. climate-technology companies from the Climate Tech VC (CTVC) universe</dd></div>
+          <div><dt>Panel</dt><dd>132,826 firm–quarters, Q1 2020–Q2 2025, with PitchBook deal records</dd></div>
+          <div><dt>Treated group</dt><dd>Energy and Carbon subfields, whose core technologies are targeted by 45X, 45V, 45Q, 50141 and 50144</dd></div>
+          <div><dt>Comparison group</dt><dd>Climate Management, Industrial, Food and Land Use, Built Environment and Transportation</dd></div>
+        </dl>
+        <ul class="method-list">
+          <li><strong>Difference-in-differences and event studies</strong> with firm and time fixed effects and firm-clustered standard errors, using both a binary treatment and continuous exposure measures.</li>
+          <li><strong>LLM-based exposure index.</strong> A large language model scores each firm's business description against the statutory language of each IRA provision (0–7); a text-similarity score provides a second, independent measure.</li>
+          <li><strong>Financing trajectories.</strong> Financing events are classified into phases, and a four-state Hidden Markov Model fitted to 14,357 event sequences recovers financing regimes from the data.</li>
+          <li><strong>Policy Credibility Index.</strong> Provision-level scores for specificity, durability and enforceability, and a stress test using the 2025 proposals to roll back parts of the IRA.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="findings" class="uganda-section" aria-labelledby="findings-title">
+      <div class="uganda-section-label"><h2 id="findings-title">Findings</h2></div>
+      <div class="uganda-prose">
+        <p class="lead">The IRA moved venture capital selectively, toward technologies most directly aligned with its incentives, and changed how climate firms finance growth.</p>
+        <article class="finding"><h3>Selective entry of venture capital</h3><p>With firm and time fixed effects, exposure raises the quarterly probability of receiving VC by 0.9 percentage points (0.009, SE 0.002) and the number of venture deals by a similar amount. Pre-period estimates are small and indistinguishable from zero; effects emerge one to two quarters after enactment and persist.</p><p>The response is graded: a one-standard-deviation increase in text-based alignment corresponds to a 0.3 percentage-point higher probability of receiving VC and roughly $122,000–$147,000 more VC per firm-quarter.</p></article>
+        <article class="finding"><h3>Less venture debt, more venture-only and non-dilutive financing</h3><p>Debt fell from 17.6% to 8.3% of financing events. The probability that a later-stage round is followed by debt halved (14.9% to 7.7%), while early-to-later-stage progression rose from 11.9% to 18.6%. The Hidden Markov Model recovers the same pattern: a pure-venture regime expands and a mixed venture–debt regime contracts.</p></article>
+        <figure class="data-figure">
+          <svg viewBox="0 0 520 290" role="img" aria-labelledby="fig-mix-title fig-mix-desc">
+<title id="fig-mix-title">How venture-backed climate-tech firms combine financing</title>
+<desc id="fig-mix-desc">Share of venture-backed firms before and after the IRA. Venture only: 48.2% to 56.9%. Venture plus accelerator or grant: 32.1% to 32.2%. Venture plus debt: 16.2% to 5.5%.</desc>
+<rect class="fig-pre" x="200" y="12" width="14" height="14" rx="2"/><text class="fig-label" x="220" y="24">Q1 2020–Q2 2022</text>
+<rect class="fig-post" x="350" y="12" width="14" height="14" rx="2"/><text class="fig-label" x="370" y="24">Q3 2022–Q2 2025</text>
+<line class="fig-axis" x1="200" y1="50" x2="200" y2="262"/>
+<text class="fig-label-strong" x="0" y="91">Venture only</text>
+<rect class="fig-pre" x="200" y="66" width="217" height="18" rx="2"/><text class="fig-value" x="424" y="80">48.2%</text>
+<rect class="fig-post" x="200" y="88" width="256" height="18" rx="2"/><text class="fig-value" x="463" y="102">56.9%</text>
+<text class="fig-label-strong" x="0" y="160">Venture + accelerator</text><text class="fig-label-strong" x="0" y="177">or grant</text>
+<rect class="fig-pre" x="200" y="141" width="144" height="18" rx="2"/><text class="fig-value" x="351" y="155">32.1%</text>
+<rect class="fig-post" x="200" y="163" width="145" height="18" rx="2"/><text class="fig-value" x="352" y="177">32.2%</text>
+<text class="fig-label-strong" x="0" y="241">Venture + debt</text>
+<rect class="fig-pre" x="200" y="216" width="73" height="18" rx="2"/><text class="fig-value" x="280" y="230">16.2%</text>
+<rect class="fig-post" x="200" y="238" width="25" height="18" rx="2"/><text class="fig-value" x="232" y="252">5.5%</text>
+<text class="fig-label" x="200" y="284">Share of venture-backed firms</text>
+</svg>
+          <figcaption><strong>Instrument mix among venture-backed firms.</strong> Firms with at least one venture round in each window; categories are not mutually exclusive. 17,765 financing events across 7,194 firms.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="credibility" class="uganda-section" aria-labelledby="credibility-title">
+      <div class="uganda-section-label"><h2 id="credibility-title">Policy credibility</h2></div>
+      <div class="uganda-prose">
+        <p class="lead">Investors price durability. Not every provision of the IRA is equally credible, and investment followed those differences.</p>
+        <p>The Policy Credibility Index scores each provision on specificity, durability and enforceability (1–5 each). Two researchers scored provisions independently (over 85% agreement before reconciliation), and a blind re-scoring by LLM judges reproduces the ranking (ρ = 0.86). Self-executing tax credits score highest; discretionary loan programs score lowest.</p>
+        <figure class="data-figure">
+          <svg viewBox="0 0 600 262" role="img" aria-labelledby="fig-pci-title fig-pci-desc">
+<title id="fig-pci-title">Policy Credibility Index by IRA provision</title>
+<desc id="fig-pci-desc">Baseline PCI at enactment on a 1 to 5 scale, with the 2025 change. 45X 4.67, change −1.00. 45V 4.33, −1.00. 45Q 4.33, no change. 30D 4.00, −1.00. 50144 3.33, −1.33. 50141 3.00, −0.67.</desc>
+<text class="fig-label" x="240" y="18">Baseline score at enactment, Aug 2022 (1–5)</text>
+<text class="fig-label" x="600" y="18" text-anchor="end">2025 change</text>
+<line class="fig-axis" x1="240" y1="30" x2="240" y2="250"/>
+<text class="fig-label-strong" x="0" y="54">45X</text><text class="fig-label" x="54" y="54">Advanced manufacturing</text>
+<rect class="fig-bar" x="240" y="40" width="205" height="20" rx="2"/><text class="fig-value" x="452" y="55">4.67</text><text class="fig-value" x="600" y="55" text-anchor="end">−1.00</text>
+<text class="fig-label-strong" x="0" y="90">45V</text><text class="fig-label" x="54" y="90">Clean hydrogen</text>
+<rect class="fig-bar" x="240" y="76" width="191" height="20" rx="2"/><text class="fig-value" x="438" y="91">4.33</text><text class="fig-value" x="600" y="91" text-anchor="end">−1.00</text>
+<text class="fig-label-strong" x="0" y="126">45Q</text><text class="fig-label" x="54" y="126">Carbon capture</text>
+<rect class="fig-bar" x="240" y="112" width="191" height="20" rx="2"/><text class="fig-value" x="438" y="127">4.33</text><text class="fig-label" x="600" y="127" text-anchor="end">none</text>
+<text class="fig-label-strong" x="0" y="162">30D</text><text class="fig-label" x="54" y="162">Clean vehicles</text>
+<rect class="fig-bar" x="240" y="148" width="176" height="20" rx="2"/><text class="fig-value" x="423" y="163">4.00</text><text class="fig-value" x="600" y="163" text-anchor="end">−1.00</text>
+<text class="fig-label-strong" x="0" y="198">50144</text><text class="fig-label" x="54" y="198">Energy infrastructure (LPO)</text>
+<rect class="fig-bar-soft" x="240" y="184" width="147" height="20" rx="2"/><text class="fig-value" x="394" y="199">3.33</text><text class="fig-value" x="600" y="199" text-anchor="end">−1.33</text>
+<text class="fig-label-strong" x="0" y="234">50141</text><text class="fig-label" x="54" y="234">Loan Programs Office</text>
+<rect class="fig-bar-soft" x="240" y="220" width="132" height="20" rx="2"/><text class="fig-value" x="379" y="235">3.00</text><text class="fig-value" x="600" y="235" text-anchor="end">−0.67</text>
+</svg>
+          <figcaption><strong>Policy Credibility Index by provision.</strong> Change: proposed 2025 amendments to each provision, scored on the same rubric. Section 45Q was unaffected and serves as a comparison.</figcaption>
+        </figure>
+        <article class="finding"><h3>A stress test in 2025</h3><p>The 2025 "One Big Beautiful Bill Act" proposals lowered the credibility of several provisions while enacted incentives stayed in force. During those quarters, each one-unit increase in IRA alignment corresponds to a 0.20 percentage-point lower probability of receiving VC (−0.0020, SE 0.0009, p &lt; .05). The share of treated firms receiving VC fell 36% (3.9% to 2.5%), compared with 20% for control firms (4.5% to 3.6%).</p></article>
+      </div>
+    </section>
+
+    <section id="limits" class="uganda-section" aria-labelledby="limits-title">
+      <div class="uganda-section-label"><h2 id="limits-title">Interpretation</h2></div>
+      <div class="uganda-prose">
+        <ul class="method-list">
+          <li>The 2025 window covers two quarters, so the stress-test estimates should be read with caution.</li>
+          <li>Financing shares are computed over deal counts, not dollars. Interest rates also rose after 2022, and the time pattern alone cannot separate policy from the rate environment; this is why the shifts are read alongside the exposure-based designs.</li>
+          <li>Treated and control subfields may differ in baseline VC affinity. Firm fixed effects and continuous within-category exposure measures address this, and results hold when Transportation is reclassified as treated.</li>
+          <li>A news-based Climate Policy Uncertainty index co-moves with venture activity in the same direction; it is supporting evidence, not identification.</li>
+        </ul>
+        <p class="research-status">Working paper. Results are from the current manuscript and may change before publication.</p>
+      </div>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>AI &amp; Entrepreneurship Lab</strong><p>Working concept · October 2026</p></div>
+      <p class="footer-note">Local draft for discussion.<br>Not an official lab launch.</p>
+    </div>
+  </footer>
+</body>
+</html>

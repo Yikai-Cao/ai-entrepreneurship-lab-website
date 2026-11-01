@@ -395,3 +395,77 @@ figcaption a { color: var(--cardinal); }
   .hero { min-height: 0; color: var(--ink); background: none; }
   .hero-media, .hero-shade { display: none; }
 }
+
+/* ---------- Research topic pages (strategic-tech.html, climate-tech.html) ---------- */
+.feature + .feature { margin-top: clamp(56px, 7vw, 96px); padding-top: clamp(56px, 7vw, 96px); border-top: 1px solid var(--line); }
+.feature-figure { display: grid; place-items: center; aspect-ratio: 16 / 10; padding: clamp(16px, 3vw, 32px); background: var(--warm); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; transition: border-color 0.2s ease; }
+.feature-figure:hover { border-color: var(--cardinal); }
+.feature-figure svg { width: 100%; height: auto; max-height: 100%; }
+.uganda-section > * { min-width: 0; }
+.data-figure { padding: clamp(18px, 3vw, 28px); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+.data-figure svg { display: block; width: 100%; height: auto; }
+.data-figure figcaption { margin-top: 14px; font-size: 13.5px; line-height: 1.55; color: var(--stone); }
+.data-figure figcaption strong { color: var(--ink); font-weight: 600; }
+.fig-label { font: 500 13px var(--sans); fill: var(--ink-soft); }
+.fig-label-strong { font: 600 13.5px var(--sans); fill: var(--ink); }
+.fig-value { font: 600 13px var(--sans); fill: var(--ink); }
+.fig-value-light { font: 600 13px var(--sans); fill: #ffffff; }
+.fig-title { font: 500 17px var(--serif); fill: var(--ink); }
+.fig-axis { stroke: var(--line); stroke-width: 1; }
+.fig-pre { fill: var(--sandstone); }
+.fig-post { fill: var(--cardinal); }
+.fig-pos { fill: var(--cardinal); }
+.fig-neg { fill: #e9e4dd; }
+.fig-bar { fill: var(--cardinal); }
+.fig-bar-soft { fill: #d9a39b; }
+.fact-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.fact-list div { padding: 16px 18px; background: var(--paper); }
+.fact-list dt { font-size: 13.5px; color: var(--stone); }
+.fact-list dd { margin: 4px 0 0; font-size: 15.5px; color: var(--ink); }
+.finding { padding: 20px 22px; border-left: 2px solid var(--cardinal); background: var(--warm); }
+.finding h3 { margin-bottom: 8px; font-size: 21px; }
+.finding p + p { margin-top: 10px; }
+.uganda-prose .finding p { color: var(--ink-soft); }
+.method-list { padding-left: 1.1em; }
+.method-list li { color: var(--ink-soft); }
+.method-list li + li { margin-top: 8px; }
+.method-list strong { color: var(--ink); font-weight: 600; }
+.uganda-prose .paper-meta { font-size: 15px; color: var(--stone); }
+.study-item .page-link { margin-top: 10px; font-size: 14.5px; }
+.study-item .page-link a { color: var(--cardinal); font-weight: 600; text-decoration: none; }
+@media (max-width: 720px) {
+  .fact-list { grid-template-columns: 1fr; }
+  .feature-figure { aspect-ratio: auto; padding: 12px; }
+  .data-figure { padding: 14px; overflow-x: auto; }
+  .data-figure svg { min-width: 460px; }
+}
+
+/* Technical figures (event study, HMM) */
+.fig-grid { stroke: #2e2d29; stroke-opacity: .09; stroke-width: 1; }
+.fig-zero { stroke: #2e2d29; stroke-opacity: .45; stroke-width: 1; stroke-dasharray: 4 4; }
+.fig-tick { font: 500 11.5px var(--sans); fill: var(--stone); font-variant-numeric: tabular-nums; }
+.fig-annot { font: italic 400 13px var(--serif); fill: var(--ink-soft); }
+.fig-callout { font: 600 15px var(--sans); fill: var(--cardinal); }
+.fig-shock { stroke: var(--cardinal); stroke-width: 1.2; stroke-dasharray: 2 3; }
+.fig-line { fill: none; stroke: #2e2d29; stroke-width: 1.6; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
+.fig-edge { fill: none; stroke: #53565a; stroke-linecap: round; }
+.fig-edge-label { font: 600 11.5px var(--sans); fill: var(--ink-soft); paint-order: stroke; stroke: var(--warm); stroke-width: 4px; }
+.fig-node-label { font: 600 11px var(--sans); letter-spacing: -.01em; }
+.fig-node-sub { font: 500 9.5px var(--sans); opacity: .8; }
+.fig-badge { font: 600 11.5px var(--sans); fill: var(--ink); font-variant-numeric: tabular-nums; }
+.fig-slope { stroke-width: 2.2; stroke-linecap: round; }
+.fig-up { fill: var(--palo-alto); }
+.fig-down { fill: var(--cardinal); }
+@media (prefers-reduced-motion: no-preference) {
+  .fig-fancy .fig-line { animation: fig-draw 1.8s ease-out both; }
+  .fig-fancy .fig-pt { animation: fig-pop .4s ease-out both; animation-delay: calc(var(--i) * 70ms + .2s); transform-box: fill-box; transform-origin: center; }
+  .fig-fancy .fig-band { animation: fig-fade 1.2s ease-out both; }
+  .fig-fancy .fig-node { animation: fig-pop .6s ease-out both; animation-delay: calc(var(--i) * 120ms); transform-box: fill-box; transform-origin: center; }
+  .fig-fancy .fig-edge { stroke-dasharray: 6 5; animation: fig-flow 1.6s linear infinite; }
+  .fig-fancy .fig-slope { stroke-dasharray: 1; stroke-dashoffset: 1; animation: fig-slope 1s ease-out forwards; animation-delay: calc(var(--i) * 150ms + .4s); }
+}
+@keyframes fig-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes fig-pop { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
+@keyframes fig-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fig-flow { to { stroke-dashoffset: -11; } }
+@keyframes fig-slope { to { stroke-dashoffset: 0; } }
