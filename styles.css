@@ -434,5 +434,7 @@ figcaption a { color: var(--cardinal); }
 .study-item .page-link a { color: var(--cardinal); font-weight: 600; text-decoration: none; }
 @media (max-width: 720px) {
   .fact-list { grid-template-columns: 1fr; }
-  .feature-figure { aspect-ratio: auto; }
+  .feature-figure { aspect-ratio: auto; padding: 12px; }
+  .data-figure { padding: 14px; overflow-x: auto; }
+  .data-figure svg { min-width: 460px; }
 }
